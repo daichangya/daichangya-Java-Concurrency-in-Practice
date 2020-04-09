@@ -1,11 +1,11 @@
-package com.nklkarthi.threadlocal;
+package com.daicy.concurrency.threadlocal;
 
 
 import org.junit.Test;
 
 import java.util.concurrent.ExecutionException;
-
 import static org.junit.Assert.assertEquals;
+
 
 public class ThreadLocalTest {
     @Test

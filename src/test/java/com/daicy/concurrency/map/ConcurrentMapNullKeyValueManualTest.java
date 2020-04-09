@@ -1,4 +1,4 @@
-package com.nklkarthi.java.concurrentmap;
+package com.daicy.concurrency.map;
 
 import org.junit.Before;
 import org.junit.Test;

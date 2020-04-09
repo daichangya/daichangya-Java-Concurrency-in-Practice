@@ -1,4 +1,4 @@
-package com.nklkarthi.java.concurrentmap;
+package com.daicy.concurrency.map;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -69,6 +69,9 @@ public class ConcurrentMapAggregateStatusManualTest {
         executorService.shutdown();
         executorService.awaitTermination(1, TimeUnit.MINUTES);
 
+//        for (int i = 1; i <= MAX_SIZE; i++) {
+//            assertEquals("map size should be consistently reliable", i, mapSizes.get(i - 1).intValue());
+//        }
         assertNotEquals("map size collected with concurrent updates not reliable", MAX_SIZE, mapSizes.get(MAX_SIZE - 1).intValue());
         assertEquals(MAX_SIZE, concurrentMap.size());
     }

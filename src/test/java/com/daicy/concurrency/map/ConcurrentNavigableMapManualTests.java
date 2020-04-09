@@ -1,4 +1,4 @@
-package com.nklkarthi.java.concurrentmap;
+package com.daicy.concurrency.map;
 
 import org.junit.Test;
 
@@ -8,7 +8,8 @@ import java.util.TreeMap;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static org.testng.Assert.*;
+import static org.junit.Assert.*;
+
 
 public class ConcurrentNavigableMapManualTests {
 

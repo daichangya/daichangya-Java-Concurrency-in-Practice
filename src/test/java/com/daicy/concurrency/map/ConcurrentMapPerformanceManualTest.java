@@ -1,4 +1,4 @@
-package com.nklkarthi.java.concurrentmap;
+package com.daicy.concurrency.map;
 
 import org.junit.Test;
 
@@ -18,12 +18,17 @@ public class ConcurrentMapPerformanceManualTest {
         Map<String, Object> hashtable = new Hashtable<>();
         Map<String, Object> synchronizedHashMap = Collections.synchronizedMap(new HashMap<>());
         Map<String, Object> concurrentHashMap = new ConcurrentHashMap<>();
+        Map<String, Object> concurrentLRUMap = new ConcurrentLRUMap<>(100000);
+
 
         long hashtableAvgRuntime = timeElapseForGetPut(hashtable);
         long syncHashMapAvgRuntime = timeElapseForGetPut(synchronizedHashMap);
         long concurrentHashMapAvgRuntime = timeElapseForGetPut(concurrentHashMap);
+        long concurrentLRUMapAvgRuntime = timeElapseForGetPut(concurrentLRUMap);
 
-        System.out.println(String.format("Hashtable: %s, syncHashMap: %s, ConcurrentHashMap: %s", hashtableAvgRuntime, syncHashMapAvgRuntime, concurrentHashMapAvgRuntime));
+
+        System.out.println(String.format("Hashtable: %s, syncHashMap: %s, ConcurrentHashMap: %s, concurrentLRUMapAvgRuntime: %s",
+                hashtableAvgRuntime, syncHashMapAvgRuntime, concurrentHashMapAvgRuntime,concurrentLRUMapAvgRuntime));
 
         assertTrue(hashtableAvgRuntime > concurrentHashMapAvgRuntime);
         assertTrue(syncHashMapAvgRuntime > concurrentHashMapAvgRuntime);

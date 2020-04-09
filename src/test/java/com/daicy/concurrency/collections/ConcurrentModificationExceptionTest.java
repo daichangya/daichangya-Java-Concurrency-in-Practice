@@ -1,4 +1,4 @@
-package com.nklkarthi.java.collections;
+package com.daicy.concurrency.collections;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import static java.util.Arrays.asList;
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class ConcurrentModificationExceptionTest {
     @Test

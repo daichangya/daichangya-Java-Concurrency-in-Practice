@@ -1,4 +1,4 @@
-package com.javaedge.concurrency.annoations;
+package com.daicy.concurrency.annoations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package com.nklkarthi.threadlocal;
+package com.daicy.concurrency.threadlocal;
 
 
 public class ThreadLocalWithUserContext implements Runnable {

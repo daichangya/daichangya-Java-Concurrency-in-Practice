@@ -1,8 +1,7 @@
-package com.nklkarthi.java.concurrentmodification;
+package com.daicy.concurrency.concurrentmodification;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;

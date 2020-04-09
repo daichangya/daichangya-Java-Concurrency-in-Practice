@@ -1,11 +1,11 @@
-package com.nklkarthi.threadpool;
+package com.daicy.concurrency.threadpool;
+
+import com.google.common.util.concurrent.MoreExecutors;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
-
-import com.google.common.util.concurrent.MoreExecutors;
 
 /**
  * This class demonstrates the usage of Guava's exiting executor services that keep the VM from hanging.

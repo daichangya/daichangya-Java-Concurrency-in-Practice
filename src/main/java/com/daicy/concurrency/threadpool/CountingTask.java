@@ -1,4 +1,4 @@
-package com.nklkarthi.threadpool;
+package com.daicy.concurrency.threadpool;
 
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;

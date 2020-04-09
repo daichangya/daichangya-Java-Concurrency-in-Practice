@@ -1,4 +1,4 @@
-package com.nklkarthi.java.concurrentmap;
+package com.daicy.concurrency.map;
 
 import org.junit.Test;
 
@@ -38,6 +38,16 @@ public class ConcurretMapMemoryConsistencyManualTest {
         long wrongResultCount = sumList.stream().filter(num -> num != 100).count();
         assertTrue(wrongResultCount > 0);
     }
+
+    @Test
+    public void givenLRUMap_whenSumParallel_thenCorrect() throws Exception {
+        Map<String, Integer> map = new ConcurrentLRUMap<>(1000);
+        List<Integer> sumList = parallelSum100(map, 1000);
+        assertEquals(1, sumList.stream().distinct().count());
+        long wrongResultCount = sumList.stream().filter(num -> num != 100).count();
+        assertEquals(0, wrongResultCount);
+    }
+
 
     private List<Integer> parallelSum100(Map<String, Integer> map, int executionTimes) throws InterruptedException {
         List<Integer> sumList = new ArrayList<>(1000);
