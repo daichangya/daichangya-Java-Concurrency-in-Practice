@@ -2,33 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a960e7d8-e1e7-4a31-91ff-074a7e61fa50" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/Context.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/SharedMapWithUserContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/ThreadLocalWithUserContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/UserRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/CountingTask.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/ExitingExecutorServiceExample.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/TreeNode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/collections/ConcurrentModificationExceptionTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/concurrentmodification/ConcurrentModificationUnitTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadlocal/ThreadLocalTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/GuavaThreadPoolIntegrationTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGenerator.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Java-Concurrency-in-Practice.iml" afterPath="$PROJECT_DIR$/Java-Concurrency-in-Practice.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotRecommend.java" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotRecommend.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotThreadSafe.java" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotThreadSafe.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/Recommend.java" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/Recommend.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/ThreadSafe.java" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/ThreadSafe.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapAggregateStatusManualTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapAggregateStatusManualTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapNullKeyValueManualTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapNullKeyValueManualTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapPerformanceManualTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapPerformanceManualTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentNavigableMapManualTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentNavigableMapManualTests.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurretMapMemoryConsistencyManualTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurretMapMemoryConsistencyManualTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ThreadLocalTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadlocal/ThreadLocalTest.java">
+      <file leaf-file-name="MutexUnitTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="11" column="99" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="99" />
+            <state relative-caret-position="-678">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,98 +43,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoreThreadPoolIntegrationTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java">
+      <file leaf-file-name="SafeCounterWithLock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConcurrentLRUMap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java">
+      <file leaf-file-name="UnsafeCounter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConcurrentMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentMap.java">
+      <file leaf-file-name="SafeCounterWithoutLock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="62" column="17" lean-forward="false" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExitingExecutorServiceExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/ExitingExecutorServiceExample.java">
+      <file leaf-file-name="ConcurrencyNumberTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="54" />
+            <state relative-caret-position="204">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/Context.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadLocalWithUserContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/ThreadLocalWithUserContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountingTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/CountingTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SharedMapWithUserContext.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/SharedMapWithUserContext.java">
+      <file leaf-file-name="ThreadSafeCounterIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreadUnsafeCounterManualTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceGeneratorUsingMonitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceGeneratorUsingReentrantLock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SequenceGeneratorUsingSemaphore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentNavigableMapManualTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapAggregateStatusManualTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/LRUMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurretMapMemoryConsistencyManualTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapPerformanceManualTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/ThreadSafe.java" />
@@ -208,9 +193,20 @@
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/collections/ConcurrentModificationExceptionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/concurrentmodification/ConcurrentModificationUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/SharedMapWithUserContext.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadlocal/ThreadLocalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentHashMapExample.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListMapExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListSetExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/CopyOnWriteArrayListExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/CopyOnWriteArraySetExample.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java" />
       </list>
     </option>
   </component>
@@ -291,113 +287,41 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-              <item name="map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-              <item name="threadpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-              <item name="threadlocal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
-              <item name="threadpool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="atomic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="atomic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
@@ -507,7 +431,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -517,19 +441,22 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.daicy.concurrency.atomic" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.daicy.concurrency.mutex" />
       <recent name="com.daicy.concurrency.concurrentmodification" />
       <recent name="com.daicy.concurrency.collections" />
       <recent name="com.daicy.concurrency.volatiles" />
       <recent name="com.daicy.concurrency.number" />
-      <recent name="com.daicy.concurrency.map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/daicy/concurrency" />
       <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/daicy/concurrency" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -544,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes">
+  <component name="RunManager" selected="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="HEIGHT" value="300" />
@@ -564,56 +491,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="ConcurrentModificationUnitTest.givenIterating_whenRemoving_thenThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.concurrentmodification.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Java-Concurrency-in-Practice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.concurrentmodification" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.concurrentmodification.ConcurrentModificationUnitTest" />
-      <option name="METHOD_NAME" value="givenIterating_whenRemoving_thenThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.threadpool.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Java-Concurrency-in-Practice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.threadpool" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.threadpool.CoreThreadPoolIntegrationTest" />
-      <option name="METHOD_NAME" value="whenCallingExecuteWithRunnable_thenRunnableIsExecuted" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -640,19 +517,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MutexUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.threadpool.*" />
+          <option name="PATTERN" value="com.daicy.concurrency.mutex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Java-Concurrency-in-Practice" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.threadpool" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.threadpool.CoreThreadPoolIntegrationTest" />
-      <option name="METHOD_NAME" value="whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.mutex" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.mutex.MutexUnitTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daicy.concurrency.mutex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Java-Concurrency-in-Practice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.mutex" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.mutex.MutexUnitTest" />
+      <option name="METHOD_NAME" value="givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -665,19 +567,44 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.volatiles.*" />
+          <option name="PATTERN" value="com.daicy.concurrency.atomic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Java-Concurrency-in-Practice" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.volatiles" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.volatiles.VolatileTest" />
-      <option name="METHOD_NAME" value="atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.atomic" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.atomic.ThreadSafeCounterIntegrationTest" />
+      <option name="METHOD_NAME" value="givenMultiThread_whenSafeCounterWithLockIncrement" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daicy.concurrency.atomic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Java-Concurrency-in-Practice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.atomic" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.atomic.ThreadUnsafeCounterManualTest" />
+      <option name="METHOD_NAME" value="givenMultiThread_whenUnsafeCounterIncrement" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -751,19 +678,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConcurrentModificationUnitTest.givenIterating_whenRemoving_thenThrowException" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MutexUnitTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ConcurrentModificationUnitTest.givenIterating_whenRemoving_thenThrowException" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MutexUnitTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
       </list>
     </recent_temporary>
   </component>
@@ -785,17 +712,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586335109550</updated>
-      <workItem from="1586335113451" duration="13160000" />
+      <workItem from="1586335113451" duration="18764000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConcurrentModificationUnitTest_givenIterating_whenRemoving_thenThrowException - 2020.04.09 at 11h 20m 19s.xml">
-      <configuration name="ConcurrentModificationUnitTest.givenIterating_whenRemoving_thenThrowException" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenCallingExecuteWithRunnable_thenRunnableIsExecuted - 2020.04.09 at 13h 25m 12s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CoreThreadPoolIntegrationTest_whenCallingExecuteWithRunnable_thenRunnableIsExecuted - 2020.04.09 at 13h 25m 22s.xml">
       <configuration name="CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" configurationId="JUnit" />
     </history-entry>
@@ -805,24 +726,30 @@
     <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 27m 55s.xml">
       <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 39m 58s.xml">
+      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 40m 18s.xml">
+      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTask_thenTaskExecutesWithinGivenPeriod - 2020.04.09 at 13h 27m 07s.xml">
       <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VolatileTest_atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect - 2020.04.08 at 18h 55m 51s.xml">
-      <configuration name="VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" configurationId="JUnit" />
+    <history-entry file="MutexUnitTest - 2020.04.09 at 16h 48m 55s.xml">
+      <configuration name="MutexUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VolatileTest_atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect - 2020.04.08 at 18h 56m 09s.xml">
-      <configuration name="VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" configurationId="JUnit" />
+    <history-entry file="MutexUnitTest_givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior - 2020.04.09 at 16h 48m 45s.xml">
+      <configuration name="MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VolatileTest_atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect - 2020.04.08 at 18h 56m 32s.xml">
-      <configuration name="VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" configurationId="JUnit" />
+    <history-entry file="ThreadSafeCounterIntegrationTest_givenMultiThread_whenSafeCounterWithLockIncrement - 2020.04.09 at 16h 53m 11s.xml">
+      <configuration name="ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="VolatileTest_atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect - 2020.04.08 at 18h 56m 45s.xml">
-      <configuration name="VolatileTest.atomicInteger_whenSizeWithoutConcurrentUpdates_thenCorrect" configurationId="JUnit" />
+    <history-entry file="ThreadUnsafeCounterManualTest_givenMultiThread_whenUnsafeCounterIncrement - 2020.04.09 at 16h 53m 27s.xml">
+      <configuration name="ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13160000" />
+    <option name="totallyTimeSpent" value="18764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -841,14 +768,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Codota" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="leetcode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -928,335 +855,35 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java</url>
           <line>38</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java</url>
           <line>44</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jcip/annotations/GuardedBy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/AbstractExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="70" column="22" lean-forward="false" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jcip/examples/TrackingExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="e#508#509#0" expanded="false" />
-            <element signature="e#540#541#0" expanded="false" />
-            <element signature="e#1290#1638#0" expanded="false" />
-            <element signature="e#1637#1638#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jcip/examples/WebCrawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#580#594#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ThreadLocalRandom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="82" column="13" lean-forward="false" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13.jar!/junit/framework/TestCase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <marker date="1586337446047" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1586337446047" expanded="false" signature="139:251" ph="..." />
-            <marker date="1586337446047" expanded="false" signature="365:376" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="394:400" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="434:445" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="463:469" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="502:513" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="522:528" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="569:580" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="604:610" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="640:745" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="785:796" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="813:819" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="864:1346" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="1394:2155" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="2225:2236" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2274:2280" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="2334:2345" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2374:2380" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="2451:2462" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2501:2507" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="2562:2573" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2603:2609" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="2654:2665" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2686:2692" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="2723:2734" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="2748:2754" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="2840:2903" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="2972:2983" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="3021:3027" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="3113:3176" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="3245:3256" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="3294:3300" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="3400:3470" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="3554:3615" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="3712:3782" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="3863:3924" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="4006:4069" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="4134:4145" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="4183:4189" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="4277:4340" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="4411:4422" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="4460:4466" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="4548:4611" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="4676:4687" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="4725:4731" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="4813:4876" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="4941:4952" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="4990:4996" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="5080:5143" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="5210:5221" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5259:5265" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="5345:5408" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="5471:5482" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5520:5526" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="5579:5590" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5619:5625" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="5694:5705" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5743:5749" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="5799:5810" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5836:5842" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="5908:5919" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="5954:5960" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="6044:6105" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="6172:6183" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="6219:6225" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="6312:6376" ph="{...}" />
-            <marker date="1586337446047" expanded="false" signature="6446:6457" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="6496:6502" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="6551:6562" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="6587:6593" ph=" }" />
-            <marker date="1586337446047" expanded="true" signature="6678:6740" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="6827:6891" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="6973:7037" ph="{...}" />
-            <marker date="1586337446047" expanded="true" signature="7083:7090" ph="{}" />
-            <marker date="1586337446047" expanded="true" signature="7139:7146" ph="{}" />
-            <marker date="1586337446047" expanded="false" signature="7176:7187" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="7249:7255" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="7284:7295" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="7313:7319" ph=" }" />
-            <marker date="1586337446047" expanded="false" signature="7357:7368" ph=" { " />
-            <marker date="1586337446047" expanded="false" signature="7386:7392" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13-sources.jar!/junit/framework/TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13-sources.jar!/org/junit/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="65" column="18" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapNullKeyValueManualTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1851">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/AbstractMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/NavigableMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="94" column="17" lean-forward="false" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentNavigableMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentSkipListMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="1282" column="11" lean-forward="false" selection-start-line="1282" selection-start-column="11" selection-end-line="1282" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentNavigableMapManualTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="52" column="65" lean-forward="true" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="128" column="20" lean-forward="false" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/LRUMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jcip/examples/Factorizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/LinkedHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="232" column="31" lean-forward="true" selection-start-line="232" selection-start-column="31" selection-end-line="232" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="1147" column="0" lean-forward="false" selection-start-line="1147" selection-start-column="0" selection-end-line="1166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurretMapMemoryConsistencyManualTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapPerformanceManualTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2429#2430#0" expanded="false" />
-            <element signature="e#2469#2470#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotThreadSafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/Recommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/NotRecommend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/annoations/ThreadSafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1272,16 +899,6 @@
           <folding>
             <element signature="e#4725#4726#0" expanded="false" />
             <element signature="e#4793#4794#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1376,16 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/concurrentmodification/ConcurrentModificationUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/GuavaThreadPoolIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1434,20 +1041,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/SharedMapWithUserContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1460,20 +1059,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadlocal/ThreadLocalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
           <caret line="11" column="99" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="99" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1483,17 +1074,261 @@
         <state relative-caret-position="170">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/28.2-jre/guava-28.2-jre-sources.jar!/com/google/common/util/concurrent/ThreadFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="136" column="50" lean-forward="false" selection-start-line="136" selection-start-column="50" selection-end-line="136" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="137" column="50" lean-forward="false" selection-start-line="137" selection-start-column="50" selection-end-line="137" selection-end-column="50" />
+        <state relative-caret-position="187">
+          <caret line="20" column="29" lean-forward="false" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/LinkedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="159" column="21" lean-forward="false" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="88" lean-forward="false" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentSkipListMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListMapExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListSetExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/CopyOnWriteArrayListExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/CopyOnWriteArraySetExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentHashMapExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/concurrentmodification/ConcurrentModificationUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/SequenceGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-678">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding />
         </state>
       </provider>

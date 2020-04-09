@@ -1,4 +1,4 @@
-package com.daicy.concurrency.number;
+package com.daicy.concurrency.atomic;
 
 
 import lombok.extern.slf4j.Slf4j;

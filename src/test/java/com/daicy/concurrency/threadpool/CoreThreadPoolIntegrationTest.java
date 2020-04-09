@@ -1,5 +1,6 @@
 package com.daicy.concurrency.threadpool;
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.junit.Test;
 
 import java.util.concurrent.*;
@@ -14,7 +15,7 @@ public class CoreThreadPoolIntegrationTest {
 
         CountDownLatch lock = new CountDownLatch(1);
 
-        Executor executor = Executors.newSingleThreadExecutor();
+        Executor executor = Executors.newSingleThreadExecutor(new ThreadFactoryBuilder().setNameFormat("newSingleThreadExecutor-%d").build());
         executor.execute(() -> {
             System.out.println("Hello World");
             lock.countDown();
