@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a960e7d8-e1e7-4a31-91ff-074a7e61fa50" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGenerator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/BlockingQueueUsage.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersConsumer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersProducer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchCountExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchResetExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/MultipleThreadsExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/NewThread.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/SingleThreadExample.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThread.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/SharedObject.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/TaskRunner.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/stopping/StopThreadManualTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/volatilekeyword/SharedObjectManualTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Java-Concurrency-in-Practice.iml" afterPath="$PROJECT_DIR$/Java-Concurrency-in-Practice.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/number/ConcurrencyNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +30,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MutexUnitTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java">
+      <file leaf-file-name="NumbersConsumer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-678">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControlSubThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+              <folding>
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/TaskRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtomicInteger.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StopThreadManualTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/stopping/StopThreadManualTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,93 +85,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeCounterWithLock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java">
+      <file leaf-file-name="CountdownLatchCountExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchCountExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="459">
+              <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnsafeCounter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java">
+      <file leaf-file-name="CountdownLatchResetExample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchResetExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="359">
+              <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SafeCounterWithoutLock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConcurrencyNumberTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java">
+      <file leaf-file-name="NumbersProducer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="-42">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadSafeCounterIntegrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java">
+      <file leaf-file-name="BlockingQueueUsage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/BlockingQueueUsage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadUnsafeCounterManualTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceGeneratorUsingMonitor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceGeneratorUsingReentrantLock.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SequenceGeneratorUsingSemaphore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -149,6 +149,7 @@
       <find>map</find>
       <find>ConcurrentHashMap</find>
       <find>computeIfPresent</find>
+      <find>volatile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,7 +198,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/CoreThreadPoolIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/map/ConcurrentLRUMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentHashMapExample.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListMapExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/ConcurrentSkipListSetExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/CopyOnWriteArrayListExample.java" />
@@ -207,6 +207,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/SharedObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/SharedObjectManualTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/SharedObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/SingleThreadExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/NewThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersConsumer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThreadError.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/stopping/StopThreadManualTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchCountExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/TaskRunner.java" />
       </list>
     </option>
   </component>
@@ -287,6 +299,54 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="countdownlatch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="stopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="volatilekeyword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
               <item name="atomic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,13 +354,9 @@
               <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java-Concurrency-in-Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="mutex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +365,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="stopping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
@@ -317,11 +374,79 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="concurrency" type="462c0819:PsiDirectoryNode" />
+              <item name="volatilekeyword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="atomic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="sun" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaConcurrencyinPractice" type="b2602c69:ProjectViewProjectNode" />
@@ -442,18 +567,19 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.daicy.concurrency" />
       <recent name="com.daicy.concurrency.atomic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.daicy.concurrency.volatilekeyword" />
+      <recent name="com.daicy.concurrency.stopping" />
+      <recent name="com.daicy.concurrency" />
       <recent name="com.daicy.concurrency.mutex" />
       <recent name="com.daicy.concurrency.concurrentmodification" />
-      <recent name="com.daicy.concurrency.collections" />
-      <recent name="com.daicy.concurrency.volatiles" />
-      <recent name="com.daicy.concurrency.number" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency" />
       <recent name="$PROJECT_DIR$/src/main/java/com/daicy/concurrency" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency" />
       <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map" />
@@ -471,12 +597,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement">
+  <component name="RunManager" selected="Application.CountdownLatchCountExample">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="HEIGHT" value="300" />
       <option name="WIDTH" value="400" />
       <module />
+    </configuration>
+    <configuration name="CountdownLatchCountExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daicy.concurrency.countdownlatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.countdownlatch.CountdownLatchCountExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-Concurrency-in-Practice" />
+      <envs />
+    </configuration>
+    <configuration name="CountdownLatchResetExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daicy.concurrency.countdownlatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.countdownlatch.CountdownLatchResetExample" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-Concurrency-in-Practice" />
+      <envs />
+    </configuration>
+    <configuration name="TaskRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.daicy.concurrency.volatilekeyword.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.volatilekeyword.TaskRunner" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-Concurrency-in-Practice" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -492,19 +675,19 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StopThreadManualTest.whenInterruptedThreadIsStopped" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.threadpool.*" />
+          <option name="PATTERN" value="com.daicy.concurrency.stopping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Java-Concurrency-in-Practice" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.threadpool" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.threadpool.CoreThreadPoolIntegrationTest" />
-      <option name="METHOD_NAME" value="whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.stopping" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.stopping.StopThreadManualTest" />
+      <option name="METHOD_NAME" value="whenInterruptedThreadIsStopped" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -517,94 +700,19 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="MutexUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StopThreadManualTest.whenStoppedThreadIsStoppedError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.mutex.*" />
+          <option name="PATTERN" value="com.daicy.concurrency.stopping.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Java-Concurrency-in-Practice" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.mutex" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.mutex.MutexUnitTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.mutex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Java-Concurrency-in-Practice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.mutex" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.mutex.MutexUnitTest" />
-      <option name="METHOD_NAME" value="givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.atomic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Java-Concurrency-in-Practice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.atomic" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.atomic.ThreadSafeCounterIntegrationTest" />
-      <option name="METHOD_NAME" value="givenMultiThread_whenSafeCounterWithLockIncrement" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.daicy.concurrency.atomic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Java-Concurrency-in-Practice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.daicy.concurrency.atomic" />
-      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.atomic.ThreadUnsafeCounterManualTest" />
-      <option name="METHOD_NAME" value="givenMultiThread_whenUnsafeCounterIncrement" />
+      <option name="PACKAGE_NAME" value="com.daicy.concurrency.stopping" />
+      <option name="MAIN_CLASS_NAME" value="com.daicy.concurrency.stopping.StopThreadManualTest" />
+      <option name="METHOD_NAME" value="whenStoppedThreadIsStoppedError" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -678,19 +786,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MutexUnitTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.StopThreadManualTest.whenInterruptedThreadIsStopped" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.StopThreadManualTest.whenStoppedThreadIsStoppedError" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TaskRunner" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CountdownLatchResetExample" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CountdownLatchCountExample" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ThreadUnsafeCounterManualTest.givenMultiThread_whenUnsafeCounterIncrement" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MutexUnitTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CountdownLatchCountExample" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CountdownLatchResetExample" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TaskRunner" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.StopThreadManualTest.whenStoppedThreadIsStoppedError" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StopThreadManualTest.whenInterruptedThreadIsStopped" />
       </list>
     </recent_temporary>
   </component>
@@ -712,34 +820,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586335109550</updated>
-      <workItem from="1586335113451" duration="18764000" />
+      <workItem from="1586335113451" duration="28678000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CoreThreadPoolIntegrationTest_whenCallingExecuteWithRunnable_thenRunnableIsExecuted - 2020.04.09 at 13h 25m 22s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenCallingExecuteWithRunnable_thenRunnableIsExecuted" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 27m 34s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 27m 55s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 39m 58s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes - 2020.04.09 at 13h 40m 18s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTaskWithFixedPeriod_thenTaskExecutesMultipleTimes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoreThreadPoolIntegrationTest_whenSchedulingTask_thenTaskExecutesWithinGivenPeriod - 2020.04.09 at 13h 27m 07s.xml">
-      <configuration name="CoreThreadPoolIntegrationTest.whenSchedulingTask_thenTaskExecutesWithinGivenPeriod" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MutexUnitTest - 2020.04.09 at 16h 48m 55s.xml">
       <configuration name="MutexUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MutexUnitTest_givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior - 2020.04.09 at 16h 48m 45s.xml">
-      <configuration name="MutexUnitTest.givenUnsafeSequenceGenerator_whenRaceCondition_thenUnexpectedBehavior" configurationId="JUnit" />
+    <history-entry file="StopThreadManualTest_whenInterruptedThreadIsStopped - 2020.04.10 at 15h 49m 41s.xml">
+      <configuration name="StopThreadManualTest.whenInterruptedThreadIsStopped" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenInterruptedThreadIsStopped - 2020.04.10 at 15h 50m 37s.xml">
+      <configuration name="StopThreadManualTest.whenInterruptedThreadIsStopped" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenStoppedThreadIsStopped - 2020.04.10 at 15h 48m 46s.xml">
+      <configuration name="StopThreadManualTest.whenStoppedThreadIsStopped" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenStoppedThreadIsStopped - 2020.04.10 at 15h 49m 19s.xml">
+      <configuration name="StopThreadManualTest.whenStoppedThreadIsStopped" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenStoppedThreadIsStopped - 2020.04.10 at 15h 50m 31s.xml">
+      <configuration name="StopThreadManualTest.whenStoppedThreadIsStopped" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenStoppedThreadIsStoppedError - 2020.04.10 at 15h 53m 57s.xml">
+      <configuration name="StopThreadManualTest.whenStoppedThreadIsStoppedError" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StopThreadManualTest_whenStoppedThreadIsStoppedError - 2020.04.10 at 15h 54m 35s.xml">
+      <configuration name="StopThreadManualTest.whenStoppedThreadIsStoppedError" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ThreadSafeCounterIntegrationTest_givenMultiThread_whenSafeCounterWithLockIncrement - 2020.04.09 at 16h 53m 11s.xml">
       <configuration name="ThreadSafeCounterIntegrationTest.givenMultiThread_whenSafeCounterWithLockIncrement" configurationId="JUnit" />
@@ -749,7 +857,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18764000" />
+    <option name="totallyTimeSpent" value="28678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="31" width="1926" height="1003" extended-state="6" />
@@ -768,14 +876,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Codota" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="leetcode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -879,196 +987,11 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13/junit-4.13-sources.jar!/org/junit/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="198" column="23" lean-forward="false" selection-start-line="198" selection-start-column="23" selection-end-line="198" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
-          <folding>
-            <element signature="e#4725#4726#0" expanded="false" />
-            <element signature="e#4793#4794#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/volatiles/VolatileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#817#818#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#896#897#0" expanded="false" />
-            <element signature="e#938#939#0" expanded="false" />
-            <element signature="e#1464#1465#0" expanded="false" />
-            <element signature="e#1500#1501#0" expanded="false" />
-            <element signature="e#1543#1544#0" expanded="false" />
-            <element signature="e#1585#1586#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/collections/ConcurrentModificationExceptionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/Iterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="91" column="17" lean-forward="false" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="e#2496#2497#0" expanded="false" />
-            <element signature="e#2561#2562#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.15.0/assertj-core-3.15.0.jar!/org/assertj/core/util/Lists.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <marker date="1586401837745" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1586401837745" expanded="false" signature="145:317" ph="..." />
-            <marker date="1586401837745" expanded="true" signature="426:638" ph="{...}" />
-            <marker date="1586401837745" expanded="true" signature="707:919" ph="{...}" />
-            <marker date="1586401837745" expanded="true" signature="1001:1135" ph="{...}" />
-            <marker date="1586401837745" expanded="true" signature="1217:1351" ph="{...}" />
-            <marker date="1586401837745" expanded="false" signature="1402:1413" ph=" { " />
-            <marker date="1586401837745" expanded="false" signature="1436:1442" ph=" }" />
-            <marker date="1586401837745" expanded="false" signature="1485:1496" ph=" { " />
-            <marker date="1586401837745" expanded="false" signature="1527:1533" ph=" }" />
-            <marker date="1586401837745" expanded="true" signature="1555:1562" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.15.0/assertj-core-3.15.0-sources.jar!/org/assertj/core/util/Lists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/map/ConcurrentMapAggregateStatusManualTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/jcip/examples/PutTakeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="693" column="22" lean-forward="false" selection-start-line="693" selection-start-column="22" selection-end-line="693" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadpool/GuavaThreadPoolIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/ThreadLocalWithUserContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/ExitingExecutorServiceExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadlocal/SharedMapWithUserContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="62" column="17" lean-forward="false" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/threadlocal/ThreadLocalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="11" column="99" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/threadpool/CountingTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1117,14 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
           <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1225,39 +1140,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1273,62 +1156,267 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/mutex/MutexUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-678">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSynchronizedMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/mutex/SequenceGeneratorUsingSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#228#229#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/SafeCounterWithoutLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ConcurrencyNumberTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/atomic/UnsafeCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="45" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadSafeCounterIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/volatilekeyword/SharedObjectManualTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/volatilekeyword/SharedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="309" column="25" lean-forward="false" selection-start-line="309" selection-start-column="25" selection-end-line="309" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5491">
+          <caret line="809" column="30" lean-forward="false" selection-start-line="809" selection-start-column="22" selection-end-line="809" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/SharedObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/SingleThreadExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/MultipleThreadsExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/daemon/NewThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="698" column="29" lean-forward="false" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+          <folding>
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15770#15771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/BlockingQueueUsage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/blockingqueue/NumbersConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/jdk1.8.0_191/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/stopping/ControlSubThreadError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/stopping/StopThreadManualTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/daicy/concurrency/atomic/ThreadUnsafeCounterManualTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchResetExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="359">
+          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/countdownlatch/CountdownLatchCountExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/daicy/concurrency/volatilekeyword/TaskRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding />
         </state>
       </provider>
