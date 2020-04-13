@@ -75,4 +75,71 @@ public class ConcurrencyNumberTest {
                volatileInt++;
         }
     }
+
+    class Foo {
+        private AtomicInteger atomicInteger = new AtomicInteger(1);
+
+        public Foo() {
+
+        }
+        public void first(Runnable printFirst) throws InterruptedException {
+            while (atomicInteger.get() % 1 != 0){
+                // printFirst.run() outputs "first". Do not change or remove this line.
+            }
+            printFirst.run();
+            atomicInteger.incrementAndGet();
+        }
+
+        public void second(Runnable printSecond) throws InterruptedException {
+            while (atomicInteger.get() % 2 != 0){
+                // printFirst.run() outputs "first". Do not change or remove this line.
+            }
+            printSecond.run();
+            atomicInteger.incrementAndGet();
+            // printSecond.run() outputs "second". Do not change or remove this line.
+        }
+
+        public void third(Runnable printThird) throws InterruptedException {
+            while (atomicInteger.get() % 3 != 0) {
+            }
+                // printThird.run() outputs "third". Do not change or remove this line.
+            printThird.run();
+            atomicInteger.incrementAndGet();
+        }
+    }
+
+    class FooBar {
+        private int n;
+
+        private AtomicInteger atomicInteger = new AtomicInteger(0);
+
+        public FooBar(int n) {
+            this.n = n;
+        }
+
+        public void foo(Runnable printFoo) throws InterruptedException {
+
+            for (; atomicInteger.get() < n; atomicInteger.incrementAndGet()) {
+                // printFoo.run() outputs "foo". Do not change or remove this line.
+                if(atomicInteger.get() % 1 == 0){
+                    printFoo.run();
+                }else {
+                    atomicInteger.incrementAndGet();
+                }
+            }
+        }
+
+        public void bar(Runnable printBar) throws InterruptedException {
+
+            for (int i = 0; i < n; i++) {
+
+                // printBar.run() outputs "bar". Do not change or remove this line.
+                if(atomicInteger.get() % 2 == 0) {
+                    printBar.run();
+                }else {
+                    atomicInteger.incrementAndGet();
+                }
+            }
+        }
+    }
 }
