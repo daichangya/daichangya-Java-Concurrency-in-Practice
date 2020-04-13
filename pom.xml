@@ -10,6 +10,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.vmlens</groupId>
+            <artifactId>annotation</artifactId>
+            <version>1.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.openjdk.jmh</groupId>
             <artifactId>jmh-core</artifactId>
             <version>RELEASE</version>
@@ -55,6 +61,13 @@
         </dependency>
     </dependencies>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>vmlens</id>
+            <url>http://vmlens.com/download</url>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <plugins>
             <plugin>
@@ -64,6 +77,26 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.vmlens</groupId>
+                <artifactId>interleave</artifactId>
+                <version>1.0.8</version>
+                <configuration>
+                    <trimStackTrace>false</trimStackTrace>
+                    <includes>
+                        <include>com.daicy.concurrency.tutorialAtomicReference.TestNotThreadSafe</include>
+                        <include>com.daicy.concurrency.tutorialAtomicReference.TestThreadSafe</include>
+                    </includes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
         </plugins>
     </build>
