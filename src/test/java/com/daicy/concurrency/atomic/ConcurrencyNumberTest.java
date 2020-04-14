@@ -4,12 +4,11 @@ package com.daicy.concurrency.atomic;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Semaphore;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.locks.*;
+import java.util.function.IntConsumer;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -78,61 +77,123 @@ public class ConcurrencyNumberTest {
     }
 
     class Foo {
-        private AtomicInteger atomicInteger = new AtomicInteger(1);
+        private Semaphore stage1 = new Semaphore(1);
+        private Semaphore stage2 = new Semaphore(0);
+        private Semaphore stage3 = new Semaphore(0);
 
         public Foo() {
 
         }
         public void first(Runnable printFirst) throws InterruptedException {
-            while (atomicInteger.get() % 1 != 0){
-                // printFirst.run() outputs "first". Do not change or remove this line.
-            }
+            stage1.acquire();
             printFirst.run();
-            atomicInteger.incrementAndGet();
+            stage2.release();
         }
 
         public void second(Runnable printSecond) throws InterruptedException {
-            while (atomicInteger.get() % 2 != 0){
-                // printFirst.run() outputs "first". Do not change or remove this line.
-            }
+            stage2.acquire();
             printSecond.run();
-            atomicInteger.incrementAndGet();
-            // printSecond.run() outputs "second". Do not change or remove this line.
+            stage3.release();
         }
 
         public void third(Runnable printThird) throws InterruptedException {
-            while (atomicInteger.get() % 3 != 0) {
-            }
-                // printThird.run() outputs "third". Do not change or remove this line.
+            stage3.acquire();
             printThird.run();
-            atomicInteger.incrementAndGet();
+            stage1.release();
         }
     }
 
     class FooBar {
         private int n;
 
-        private AtomicReference<Integer> atomicInteger = new AtomicReference<>();
+        private Semaphore stage1 = new Semaphore(1);
+        private Semaphore stage2 = new Semaphore(0);
 
         public FooBar(int n) {
-            this.n =  n;
-            this.atomicInteger.set(0);
+            this.n = n;
         }
 
         public void foo(Runnable printFoo) throws InterruptedException {
-            while (atomicInteger.get() < n) {
-                if(atomicInteger.get() % 1 == 0){
-                    printFoo.run();
-                    atomicInteger.compareAndSet(atomicInteger.get(),atomicInteger.get()+1);
-                }
+            for (int i = 0; i < n; i++) {
+                stage1.acquire();
+                printFoo.run();
+                stage2.release();
             }
         }
 
         public void bar(Runnable printBar) throws InterruptedException {
-            while (atomicInteger.get() < n) {
-                if(atomicInteger.get() % 2 == 0){
-                    printBar.run();
-                    atomicInteger.compareAndSet(atomicInteger.get(),atomicInteger.get()+1);
+            for (int i = 0; i < n; i++) {
+                stage2.acquire();
+                printBar.run();
+                stage1.release();
+            }
+        }
+    }
+
+    class FizzBuzz {
+        private int n;
+
+        private AtomicInteger atomicInteger = new AtomicInteger(1);
+
+        private Semaphore semaphore = new Semaphore(1);
+
+
+        public FizzBuzz(int n) {
+            this.n = n;
+        }
+
+        // printFizz.run() outputs "fizz".
+        public void fizz(Runnable printFizz) throws InterruptedException {
+            while (atomicInteger.get() <= n) {
+                if (atomicInteger.get() % 3 == 0 && atomicInteger.get() % 5 != 0) {
+                    semaphore.acquire();
+                    printFizz.run();
+                    atomicInteger.getAndIncrement();
+                    semaphore.release();
+                } else {
+                    Thread.yield();
+                }
+            }
+        }
+
+        // printBuzz.run() outputs "buzz".
+        public void buzz(Runnable printBuzz) throws InterruptedException {
+            while (atomicInteger.get() <= n) {
+                if (atomicInteger.get() % 5 == 0 && atomicInteger.get() % 3 != 0) {
+                    semaphore.acquire();
+                    printBuzz.run();
+                    atomicInteger.getAndIncrement();
+                    semaphore.release();
+                } else {
+                    Thread.yield();
+                }
+            }
+        }
+
+        // printFizzBuzz.run() outputs "fizzbuzz".
+        public void fizzbuzz(Runnable printFizzBuzz) throws InterruptedException {
+            while (atomicInteger.get() <= n) {
+                if (atomicInteger.get() % 3 == 0 && atomicInteger.get() % 5 == 0) {
+                    semaphore.acquire();
+                    printFizzBuzz.run();
+                    atomicInteger.getAndIncrement();
+                    semaphore.release();
+                } else {
+                    Thread.yield();
+                }
+            }
+
+        }
+
+        // printNumber.accept(x) outputs "x", where x is an integer.
+        public void number(IntConsumer printNumber) throws InterruptedException {
+            while (atomicInteger.get() <= n) {
+                if (atomicInteger.get() % 3 == 0 || atomicInteger.get() % 5 == 0) {
+                    Thread.yield();
+                } else {
+                    semaphore.acquire();
+                    printNumber.accept(atomicInteger.getAndIncrement());
+                    semaphore.release();
                 }
             }
         }
