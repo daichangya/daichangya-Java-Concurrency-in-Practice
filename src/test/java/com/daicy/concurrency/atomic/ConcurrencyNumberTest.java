@@ -9,6 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
@@ -111,33 +112,27 @@ public class ConcurrencyNumberTest {
     class FooBar {
         private int n;
 
-        private AtomicInteger atomicInteger = new AtomicInteger(0);
+        private AtomicReference<Integer> atomicInteger = new AtomicReference<>();
 
         public FooBar(int n) {
-            this.n = n;
+            this.n =  n;
+            this.atomicInteger.set(0);
         }
 
         public void foo(Runnable printFoo) throws InterruptedException {
-
-            for (; atomicInteger.get() < n; atomicInteger.incrementAndGet()) {
-                // printFoo.run() outputs "foo". Do not change or remove this line.
+            while (atomicInteger.get() < n) {
                 if(atomicInteger.get() % 1 == 0){
                     printFoo.run();
-                }else {
-                    atomicInteger.incrementAndGet();
+                    atomicInteger.compareAndSet(atomicInteger.get(),atomicInteger.get()+1);
                 }
             }
         }
 
         public void bar(Runnable printBar) throws InterruptedException {
-
-            for (int i = 0; i < n; i++) {
-
-                // printBar.run() outputs "bar". Do not change or remove this line.
-                if(atomicInteger.get() % 2 == 0) {
+            while (atomicInteger.get() < n) {
+                if(atomicInteger.get() % 2 == 0){
                     printBar.run();
-                }else {
-                    atomicInteger.incrementAndGet();
+                    atomicInteger.compareAndSet(atomicInteger.get(),atomicInteger.get()+1);
                 }
             }
         }
